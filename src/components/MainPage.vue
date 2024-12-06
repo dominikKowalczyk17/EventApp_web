@@ -2,11 +2,11 @@
 
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
-import Home from "@/components/Events.vue";
+import Events from "@/components/Events.vue";
 </script>
 
 <template class="flex flex-col min-h-screen">
   <Navbar class="flex-shrink-0"/>
-      <Home/>
+      <Events/>
   <Footer class="flex-shrink-0"/>
 </template>

@@ -11,7 +11,7 @@ import {
 <template>
   <fwb-navbar>
     <template #logo>
-      <fwb-navbar-title alt="Flowbite logo" link="#">
+      <fwb-navbar-title alt="Flowbite logo" link="#" class="font-sans font-bold text-xl text-white">
         Event Managment
       </fwb-navbar-title>
     </template>

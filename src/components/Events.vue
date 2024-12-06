@@ -5,13 +5,18 @@ import TableHeader from "@/components/TableHeader.vue";
 import TableItem from "@/components/TableItem.vue";
 
 import { ref, onMounted} from "vue";
+import NoEvents from "@/components/NoEvents.vue";
 const events = ref([]);
+const error = ref(false);
+
+
 const getEvents = async () => {
   try {
     const response = await fetch('http://localhost:8080/api/events');
     events.value = await response.json();
   } catch (error) {
     console.log('Wystąpił błąd podczas pobierania danych:', error);
+    error.value = true;
   }
 };
 onMounted(() => {
@@ -44,7 +49,12 @@ onMounted(() => {
             <TableHeader :columns="['Event Name', 'Description', 'Location', 'Date', 'Time']" />
             </thead>
             <tbody>
-            <tr v-for="event in events" :key="event.id" class="border-b dark:border-gray-700">
+            <tr v-if="events.length < 1 || error" class="w-full" colspan="5">
+              <td colspan="5" class="p-4 text-center">
+                <NoEvents/>
+              </td>
+            </tr>
+            <tr v-else v-for="event in events" :key="event.id" class="border-b dark:border-gray-700">
               <TableItem
                   :eventName="event.eventName"
                   :description="event.description"
