@@ -1,5 +1,5 @@
 # event-managment-web
-Frontend interface for Event Management API developed in Vue 3 using flowbite components with custom features
+Frontend interface for Event Management API developed in Vue 3 using Flowbite components and TailwindCSS with custom features
 
 ## Recommended Setup
 Needs to be used with a backend API otherwise nothing will show up other than empty table
