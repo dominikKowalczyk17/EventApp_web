@@ -1,10 +1,8 @@
 # event-managment-web
+Frontend interface for Event Management API developed in Vue 3 using flowbite components with custom features
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Recommended Setup
+Needs to be used with a backend API otherwise nothing will show up other than empty table
 
 ## Customize configuration
 
