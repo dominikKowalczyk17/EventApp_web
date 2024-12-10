@@ -11,5 +11,6 @@ const props = defineProps({
     <th v-for="column in columns" :key="column" scope="col" class="px-4 py-4">
       {{ column }}
     </th>
+    <th scope="col" class="px-4 py-4"></th>
   </tr>
 </template>
