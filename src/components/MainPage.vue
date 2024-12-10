@@ -7,6 +7,6 @@ import Events from "@/components/Events.vue";
 
 <template class="flex flex-col min-h-screen">
   <Navbar class="flex-shrink-0"/>
-      <Events/>
+      <Events />
   <Footer class="flex-shrink-0"/>
 </template>
